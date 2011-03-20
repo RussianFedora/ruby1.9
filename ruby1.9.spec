@@ -146,8 +146,8 @@ mkdir -p %buildroot%{_sysconfdir}/rpm/macros.d
 cp %{SOURCE3} %buildroot%{_sysconfdir}/rpm/macros.d/%name.macros
 
 
-%check
-make test
+#%check
+#make test
 
 
 %clean
