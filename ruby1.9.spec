@@ -26,7 +26,7 @@ BuildRequires:	tcl-devel tk-devel
 BuildRequires:	db4-devel
 BuildRequires:  gdbm-devel >= 1.8.3
 BuildRequires:  openssl-devel
-BuildRequires:	zlib1-devel
+BuildRequires:	zlib-devel
 
 Provides:	/usr/bin/ruby%{subver}
 
