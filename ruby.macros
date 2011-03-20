@@ -1,0 +1,12 @@
+# rpm macros for use in ruby packages
+
+%ruby_version		%(ruby -rrbconfig -e 'print Config::CONFIG["ruby_version"]')
+
+%ruby_archdir		%(ruby -rrbconfig -e 'print Config::CONFIG["archdir"]')
+%ruby_libdir		%(ruby -rrbconfig -e 'print Config::CONFIG["rubylibdir"]')
+%ruby_sitearchdir	%(ruby -rrbconfig -e 'print Config::CONFIG["sitearchdir"]')
+%ruby_sitelibdir	%(ruby -rrbconfig -e 'print Config::CONFIG["sitelibdir"]')
+%ruby_vendorarchdir	%(ruby -rrbconfig -e 'print Config::CONFIG["vendorarchdir"]')
+%ruby_vendorlibdir	%(ruby -rrbconfig -e 'print Config::CONFIG["vendorlibdir"]')
+%ruby_gemdir		%(ruby -rrbconfig -e 'include Config; print CONFIG["rubylibdir"].sub(CONFIG["ruby_version"], "gems/#{CONFIG["ruby_version"]}")')
+%ruby_ridir		%(ruby -rrbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"])')
