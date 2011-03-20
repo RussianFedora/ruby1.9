@@ -12,7 +12,7 @@ Release: 	1.1%{patchversion}%{?dist}
 License:	Ruby or GPLv2
 URL:		http://www.ruby-lang.org/
 Group:		Development/Ruby
-Source0:	ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-%{version}-p180.tar.gz
+Source0:	ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p180.tar.gz
 Source1:	rubyfaqall.html.bz2
 Source2:	ProgrammingRuby-0.4.tar.bz2
 Source3:	ruby.macros
