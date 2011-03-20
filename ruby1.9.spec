@@ -7,12 +7,12 @@
 Summary:	Object Oriented Script Language
 Name:		ruby%{subver}
 Version:	%{rubyver}
-Release: 	1%{?dist}
+Release: 	1.1%{patchversion}%{?dist}
 
 License:	Ruby or GPLv2
 URL:		http://www.ruby-lang.org/
 Group:		Development/Ruby
-Source0:	ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p180.tar.gz
+Source0:	ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-%{version}-p180.tar.gz
 Source1:	rubyfaqall.html.bz2
 Source2:	ProgrammingRuby-0.4.tar.bz2
 Source3:	ruby.macros
@@ -24,7 +24,7 @@ BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
 BuildRequires:	tcl-devel tk-devel
 BuildRequires:	db4-devel
-BuildRequires:  libgdbm-devel >= 1.8.3
+BuildRequires:  gdbm-devel >= 1.8.3
 BuildRequires:  openssl-devel
 BuildRequires:	zlib1-devel
 
@@ -201,7 +201,12 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Sun Mar 20 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 1.9.1.p180-1
+* Sun Mar 20 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 1.9.2-1.1.p180
+- new release
+- fix url
+- fix BR gdbm-devel 
+
+* Sun Mar 20 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 1.9.2.p180-1
 - update to 1.9.2 p180
 
 * Thu Sep  2 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 1.9.1.p378-0.1
